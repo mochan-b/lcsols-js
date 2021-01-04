@@ -11,7 +11,6 @@ describe("Solution 911 tests", () => {
         for (var i=0; i<ts.length; i++) {
             result = topVotedCandidate.q(ts[i][0]);
             expect(result).toBe(ans[i]);
-            console.log(result);
         }
     });
 
@@ -25,7 +24,6 @@ describe("Solution 911 tests", () => {
         for (var i=0; i<ts.length; i++) {
             result = topVotedCandidate.q(ts[i][0]);
             expect(result).toBe(ans[i]);
-            console.log(result);
         }
     });
 
@@ -34,14 +32,11 @@ describe("Solution 911 tests", () => {
         var times = [0,6,39,52,75];
         var topVotedCandidate = new TopVotedCandidate(persons, times);
 
-        //var ts = [[45],[49],[59],[68],[42],[37],[99],[26],[78],[43]];
-        //var ans = [0,0,0,0,0,0,0,0,0,0];
-        var ts = [[99]];
-        var ans = [0];
+        var ts = [[45],[49],[59],[68],[42],[37],[99],[26],[78],[43]];
+        var ans = [0,0,0,0,0,0,0,0,0,0];
         for (var i=0; i<ts.length; i++) {
             result = topVotedCandidate.q(ts[i][0]);
             expect(result).toBe(ans[i]);
-            console.log(result);
         }
     });
 
@@ -55,7 +50,6 @@ describe("Solution 911 tests", () => {
         for (var i=0; i<ts.length; i++) {
             result = topVotedCandidate.q(ts[i][0]);
             expect(result).toBe(ans[i]);
-            console.log(result);
         }
     });
 
@@ -69,7 +63,6 @@ describe("Solution 911 tests", () => {
         for (var i=0; i<ts.length; i++) {
             result = topVotedCandidate.q(ts[i][0]);
             expect(result).toBe(ans[i]);
-            console.log(result);
         }
     });
 })
