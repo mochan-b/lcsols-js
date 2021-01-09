@@ -1,5 +1,4 @@
 var TopVotedCandidate = function (persons, times) {
-    this.persons = persons;
     this.times = times;
 
     this.winner = [];
@@ -8,7 +7,7 @@ var TopVotedCandidate = function (persons, times) {
 
     var votes = new Map();
     for (var i=0; i<this.times.length; i++) {
-        var person = this.persons[i];
+        var person = persons[i];
 
         if (!votes.has(person))
         {
